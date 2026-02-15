@@ -11,6 +11,14 @@
 </head>
 
 <body>
+    <!-- SVG Gradient Definition -->
+    <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+        <linearGradient id="icon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+        </linearGradient>
+    </svg>
+
     <header>
         <div class="container">
             <nav>
@@ -29,12 +37,18 @@
 
     <section class="hero">
         <div class="container">
-            <h1>EdgeTalk Telecom Solutions</h1>
-            <h2>Technological solutions to increase your business throughput</h2>
-            <p>EdgeTalk telecom products are built on data analytics platform providing users with effective analytics
-                of every aspect of their contact center operation. Measuring and plotting various performance parameters
-                aids management to provide better customer experience and optimize resource utilization.</p>
-            <a href="#contact" class="btn btn-primary">Contact Us</a>
+            <div class="hero-content">
+                <h1>EdgeTalk Telecom Solutions</h1>
+                <h2>Technological solutions to increase your business throughput</h2>
+                <p>EdgeTalk telecom products are built on data analytics platform providing users with effective
+                    analytics of every aspect of their contact center operation. Measuring and plotting various
+                    performance parameters aids management to provide better customer experience and optimize resource
+                    utilization.</p>
+                <a href="#contact" class="btn btn-primary">Contact Us</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-tech-bg.png" alt="EdgeTalk Telecom Solutions 3D Illustration">
+            </div>
         </div>
     </section>
 
@@ -59,22 +73,42 @@
                 <h2>Our Products</h2>
             </div>
             <div class="grid">
-                <!-- Product 1 -->
+                <!-- Product 1: Contact Center -->
                 <div class="glass-card">
+                    <div class="icon-container">
+                        <svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z" />
+                            <path d="M14 9h-4c-1.1 0-2 .9-2 2v1h8v-1c0-1.1-.9-2-2-2z" />
+                        </svg>
+                    </div>
                     <h3>Contact Center</h3>
                     <p>OmniChannel communication suite to help your customer care team. Integrated Voice, telegram,
                         whatsapp, fb chat etc channels as a single channel of communication.</p>
                     <a href="contact-center.html" class="btn-link">➔ Learn more</a>
                 </div>
-                <!-- Product 2 -->
+                <!-- Product 2: Voice Logger -->
                 <div class="glass-card">
+                    <div class="icon-container">
+                        <svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z" />
+                            <path
+                                d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" />
+                        </svg>
+                    </div>
                     <h3>Voice Logger</h3>
                     <p>Call Recording at Ease for your Business Multi Channel Voice recording from Analog, Digital and
                         VoIP lines.</p>
                     <a href="voice-logger.html" class="btn-link">➔ Learn more</a>
                 </div>
-                <!-- Product 3 -->
+                <!-- Product 3: Call Data Analytics -->
                 <div class="glass-card">
+                    <div class="icon-container">
+                        <svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
+                        </svg>
+                    </div>
                     <h3>Call Data Analytics</h3>
                     <p>More than a Call billing Solution - Call Billing Solution built natively on big data analytics
                         platform.</p>
@@ -82,6 +116,12 @@
                 </div>
                 <!-- Product 4: CSTA MUX -->
                 <div class="glass-card">
+                    <div class="icon-container">
+                        <svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z" />
+                        </svg>
+                    </div>
                     <h3>CSTA MUX</h3>
                     <p>Panasonic PBX systems allow only one concurrent CSTA connection. EdgeTalk CSTA Multiplexer can be
                         used to allow multiple CSTA Applications.</p>
@@ -89,6 +129,11 @@
                 </div>
                 <!-- Product 5: WFH Suite -->
                 <div class="glass-card">
+                    <div class="icon-container">
+                        <svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                        </svg>
+                    </div>
                     <h3>Work From Home Suite</h3>
                     <p>Employee Communication & Monitoring Suite. Cloud hosted browser based solution.</p>
                     <a href="work-from-home-suite.html" class="btn-link">➔ Learn more</a>
